@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#313030",
+                        "surface-variant": "#353534",
+                        "primary": "#ffb876",
+                        "on-surface": "#e5e2e1",
+                        "tertiary-fixed-dim": "#ffb77d",
+                        "on-tertiary-fixed-variant": "#6e3900",
+                        "on-tertiary-container": "#432100",
+                        "surface-container": "#201f1f",
+                        "inverse-primary": "#8d4f00",
+                        "secondary-container": "#753401",
+                        "on-secondary-fixed": "#321200",
+                        "tertiary": "#ffb77d",
+                        "primary-fixed-dim": "#ffb876",
+                        "on-secondary-fixed-variant": "#753401",
+                        "on-secondary": "#532200",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#4b2800",
+                        "background": "#131313",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#c9803f",
+                        "surface-tint": "#ffb876",
+                        "outline": "#a08d80",
+                        "outline-variant": "#524439",
+                        "on-primary-fixed-variant": "#6b3b00",
+                        "error-container": "#93000a",
+                        "secondary-fixed": "#ffdbc9",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-tertiary-fixed": "#2f1500",
+                        "on-secondary-container": "#fb9f66",
+                        "inverse-surface": "#e5e2e1",
+                        "primary-fixed": "#ffdcc0",
+                        "primary-container": "#d17c1d",
+                        "on-surface-variant": "#d8c3b4",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-bright": "#393939",
+                        "on-tertiary": "#4d2600",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary-fixed": "#2d1600",
+                        "on-primary-container": "#422200",
+                        "surface-dim": "#131313",
+                        "secondary-fixed-dim": "#ffb68c",
+                        "tertiary-fixed": "#ffdcc3",
+                        "surface-container-highest": "#353534",
+                        "on-background": "#e5e2e1",
+                        "secondary": "#ffb68c",
+                        "surface": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        @font-face {
+            font-family: 'Playfair';
+            src: url('assets/Playfair/Playfair-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+        .playfair {
+            font-family: 'Playfair', serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .copper-glow {
+            box-shadow: 0 0 15px rgba(255, 184, 118, 0.1);
+        }
+        .metallic-gradient {
+            background: linear-gradient(135deg, #ffb876 0%, #d17c1d 100%);
+        }
+        .glass-card {
+            background-color: rgba(53, 53, 52, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        body {
+            background-image: url('assets/bg.avif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-transparent docked full-width top-0 sticky z-50">
+
+</header>
+<main class="flex-grow w-full max-w-2xl mx-auto px-6 py-12 flex flex-col items-center">
+<!-- Profile Section -->
+<div class="flex flex-col items-center mb-10">
+<div class="relative mb-6">
+<img alt="Creekson Joseph" class="w-32 h-32 object-cover rounded-full  " src="assets/Headerpicture.jpeg"/>
+</div>
+<h1 class="text-4xl font-extrabold tracking-tight text-on-surface mb-2">
+                Creekson Joseph
+            </h1>
+<p class="text-lg text-secondary-fixed-dim font-medium mb-8">
+                👨‍💻 Software Engineer
+            </p>
+<!-- Social Icons -->
+<div class="flex gap-4 ">
+<a class="w-12 h-12 flex items-center justify-center rounded-xl bg-background text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="mailto:charanajoseph@gmail.com" target="_blank" rel="noopener" title="Email" id="social-email">
+<i class="fa-solid fa-envelope text-xl"></i>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-xl bg-background text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="https://www.instagram.com/creekson.joseph/" target="_blank" rel="noopener" title="Instagram" id="social-instagram">
+<i class="fa-brands fa-instagram text-xl"></i>
+</a>
+<a class="w-12 h-12 flex items-center justify-center rounded-xl bg-background text-primary hover:bg-primary hover:text-on-primary transition-all duration-300" href="https://pin.it/3teY3sDiW" target="_blank" rel="noopener" title="Pinterest" id="social-pinterest">
+<i class="fa-brands fa-pinterest-p text-xl"></i>
+</a>
+</div>
+</div>
+<!-- Links Section -->
+<div class="w-full flex flex-col gap-4">
+<!-- Link Card 1 -->
+<a class="glass-card group relative flex min-h-16 w-full flex-col justify-center gap-[1px] py-3 tracking-[-0.2px] items-center px-16 rounded-xl border border-outline-variant/20 hover:border-primary/40 transition-all duration-300" href="https://github.com/creeksonJoseph" target="_blank" rel="noopener" id="link-github">
+<div class="absolute bottom-2 left-2 top-2 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-secondary-container/30 text-primary">
+<i class="fa-brands fa-github text-2xl"></i>
+</div>
+<div class="w-full overflow-hidden text-balance text-[14px] font-medium leading-[1.2] sm:text-[16px] line-clamp-2 text-center text-white">
+<span class="playfair">GitHub</span>
+</div>
+</a>
+<!-- Link Card 2 -->
+<a class="glass-card group relative flex min-h-16 w-full flex-col justify-center gap-[1px] py-3 tracking-[-0.2px] items-center px-16 rounded-xl border border-outline-variant/20 hover:border-primary/40 transition-all duration-300" href="https://portfolio-pi-seven-48.vercel.app/" target="_blank" rel="noopener" id="link-portfolio">
+<div class="absolute bottom-2 left-2 top-2 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg">
+<img alt="Developer Portfolio" class="h-full w-full object-cover" src="assets/portfolio.jpg"/>
+</div>
+<div class="w-full overflow-hidden text-balance text-[14px] font-medium leading-[1.2] sm:text-[16px] line-clamp-2 text-center text-white">
+<span class="playfair">Developer Portfolio</span>
+</div>
+</a>
+<!-- Link Card 3 -->
+<a class="glass-card group relative flex min-h-16 w-full flex-col justify-center gap-[1px] py-3 tracking-[-0.2px] items-center px-16 rounded-xl border border-outline-variant/20 hover:border-primary/40 transition-all duration-300" href="https://www.linkedin.com/in/joseph-charana-038328353/" target="_blank" rel="noopener" id="link-linkedin">
+<div class="absolute bottom-2 left-2 top-2 flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg bg-secondary-container/30 text-primary">
+<i class="fa-brands fa-linkedin-in text-2xl"></i>
+</div>
+<div class="w-full overflow-hidden text-balance text-[14px] font-medium leading-[1.2] sm:text-[16px] line-clamp-2 text-center text-white">
+<span class="playfair">LinkedIn</span>
+</div>
+</a>
+</div>
+<!-- Copper Divider -->
+<div class="mt-16 w-10 h-0.5 bg-primary rounded-full"></div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] docked full-width bottom-0 no-line tonal shift">
+<div class="flex flex-col items-center gap-4 py-12 w-full mt-auto">
+<div class="text-lg font-black text-[#ffb876]">Creekson Joseph</div>
+
+<div class="font-['Plus_Jakarta_Sans'] text-sm text-[#d8c3b4]">
+    © <span id="year"></span> Creekson Joseph
+</div>
+</div>
+</footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body></html>
